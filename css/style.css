@@ -1,0 +1,236 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background: url(/img/e0jTCb4.png) right top/42vh no-repeat;
+    background-color: #f5fbff;
+    touch-action: manipulation;
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #333;
+    overflow-x: hidden;
+}
+
+body.sombre {
+    background: url(/img/tIFb5af.png) right top/42vh no-repeat;
+    background-color: #0b1a25!important;
+    color: #fff;
+}
+
+body {
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    -webkit-transition: color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear;
+}
+
+span.couleur {
+    background-image: linear-gradient(to right, #0078ff, #008fff, #00a3ff, #00b5ff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.conteneur {
+    margin-left: 2.5vh;
+}
+
+div.conteneur>div.informations {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 12vw;
+    width: 610px;
+    border: .5px solid rgba(0, 0, 0, 0.12);
+    padding: 0 45px 29px 45px;
+    border-radius: 5px;
+}
+
+body.sombre>div.conteneur>div.informations {
+    border: .5px solid rgba(255, 255, 255, 0.08);
+}
+
+footer {
+    position: absolute;
+    bottom: 14px;
+    font-size: 0.45em;
+}
+
+footer>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer>ul>li {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+div.logo img {
+    width: 77px;
+    pointer-events: none;
+}
+
+div.conteneur>.logo {
+    margin-top: 13px;
+}
+
+div.informations>p {
+    font-size: 0.8em;
+}
+
+body>button {
+    margin-left: 8px;
+    background: #2C2F33;
+    position: absolute;
+    right: 10px;
+    padding: 11px 17px;
+    font-size: .5em;
+}
+
+span.italique {
+    font-style: italic;
+}
+
+body.sombre>button {
+    background: #fff;
+    color: #2C2F33;
+}
+
+button {
+    background-image: linear-gradient(to left top, #21aeec, #069fe4, #0090db, #0080d2, #1171c7);
+    background-color: #0090db;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    padding: 12px 29px;
+    cursor: pointer;
+    border-radius: 11px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.26);
+    transition: .2s;
+}
+
+button:active {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.26);
+    transition: .1s;
+    transform: translate(0, 4px);
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+span.typed-cursor {
+    font-weight: 100;
+}
+
+div.informations>h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+p>img.colibri {
+    width: 32px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+p>img.colibri:hover {
+    transition: .1s;
+    transform: translate(0, -4px);
+}
+
+footer>ul li:last-child {
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: initial;
+}
+
+body.sombre footer a {
+    color: #fff;
+}
+
+div.informations>p.lct {
+    font-size: 0.55em!important;
+    margin: -21px 0 29px 0;
+}
+
+@media screen and (max-width: 1450px) {
+    body {
+        font-size: 1.8em;
+    }
+    div.conteneur>div.informations {
+        width: 445px;
+        left: 10vw;
+    }
+	footer {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 1022px) {
+    body {
+        font-size: 1.6em;
+        background-position-x: 120%!important;
+    }
+    div.conteneur>div.informations {
+        width: 484px;
+        left: 6vw;
+        border: 0!important;
+        padding: 0!important;
+        border-radius: 0!important;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    body {
+        background-position-x: 80vw!important;
+        font-size: 1.5em;
+    }
+    div.conteneur>div.informations {
+        width: 90%;
+        left: 6vw;
+    }
+    footer {
+        font-size: .7em;
+    }
+    div.logo img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    body {
+        font-size: 1.35em;
+        background-position-x: 70vw!important;
+    }
+    div.conteneur>div.informations {
+        width: 90%;
+        left: 6vw;
+    }
+    footer {
+        font-size: .6em;
+    }
+    div.logo>img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    img.colibri {
+        display: none;
+    }
+    body {
+        font-size: 1.25em;
+    }
+}
