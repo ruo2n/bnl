@@ -7,8 +7,10 @@ function gererClicBoutonModeSombre() {
     var bouton = $('body > button');
     if (corps.hasClass('sombre')) {
         corps.removeClass('sombre');
+        button.hide().html('<i class="far fa-moon"></i>').fadeIn('fast');
     } else {
         corps.addClass('sombre');
+        button.hide().html('<i class="fas fa-moon"></i>').fadeIn('fast');
     }
 }
 
