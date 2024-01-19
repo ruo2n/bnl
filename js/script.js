@@ -4,13 +4,12 @@ function gererClicBoutonInfo() {
 
 function gererClicBoutonModeSombre() {
     var corps = $('body');
-    var bouton = $('body > button');
     if (corps.hasClass('sombre')) {
         corps.removeClass('sombre');
-        button.hide().html('<i class="far fa-moon"></i>').fadeIn('fast');
+        $('body > button > i').removeClass("fas").addClass("far");
     } else {
         corps.addClass('sombre');
-        button.hide().html('<i class="fas fa-moon"></i>').fadeIn('fast');
+        $('body > button > i').removeClass("far").addClass("fas");
     }
 }
 
