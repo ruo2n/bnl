@@ -11,10 +11,8 @@ function gestionClicBoutonModeSombre() {
     var bouton = $('body > button');
     if (corps.hasClass('sombre')) {
         corps.removeClass('sombre');
-        bouton.hide().html('<i class="far fa-moon"></i>').fadeIn('fast');
     } else {
         corps.addClass('sombre');
-        bouton.hide().html('<i class="fas fa-moon"></i>').fadeIn('fast');
     }
 }
 
@@ -32,9 +30,7 @@ function initAnimationTyped() {
 
 $(document).ready(function () {
     $('button.infos').on('click', gestionClicBoutonInfo);
-
     $('body > button').on('click', gestionClicBoutonModeSombre);
-
     initAnimationTyped();
 });
 
