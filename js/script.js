@@ -1,12 +1,8 @@
-function gestionClicBoutonInfo() {
+function gererClicBoutonInfo() {
     $('div.informations > p, div.informations > h1').fadeOut('slow').fadeIn('slow');
-    $('button.infos > i.fa-fan').addClass('fa-spin');
-    setTimeout(function () {
-        $('button.infos > i.fa-fan').removeClass('fa-spin');
-    }, 500);
 }
 
-function gestionClicBoutonModeSombre() {
+function gererClicBoutonModeSombre() {
     var corps = $('body');
     var bouton = $('body > button');
     if (corps.hasClass('sombre')) {
@@ -16,24 +12,21 @@ function gestionClicBoutonModeSombre() {
     }
 }
 
-function initAnimationTyped() {
+function initialiserAnimationTyped() {
     var typed = new Typed('.typedjs', {
         strings: ['"À jour" est la <span class="couleur">meilleure chose</span> que vous puissiez être.'],
         typeSpeed: 50,
         contentType: 'html',
-        startDelay: 0,
-        onComplete: function () {
-            $('button.infos > i.fa-fan').removeClass('fa-spin');
-        }
+        startDelay: 0
     });
 }
 
 $(document).ready(function () {
-    $('button.infos').on('click', gestionClicBoutonInfo);
-    $('body > button').on('click', gestionClicBoutonModeSombre);
-    initAnimationTyped();
+    $('button.infos').on('click', gererClicBoutonInfo);
+    $('body > button').on('click', gererClicBoutonModeSombre);
+    initialiserAnimationTyped();
 });
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    gestionClicBoutonModeSombre();
+    gererClicBoutonModeSombre();
 }
