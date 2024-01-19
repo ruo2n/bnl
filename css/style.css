@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box;
-    background: url(/img/e0jTCb4.png) right top/42vh no-repeat;
+    background: url(/e0jTCb4.png) right top/42vh no-repeat;
     background-color: #f5fbff;
     touch-action: manipulation;
     font-weight: 300;
@@ -14,7 +14,7 @@ body {
 }
 
 body.sombre {
-    background: url(/img/tIFb5af.png) right top/42vh no-repeat;
+    background: url(/tIFb5af.png) right top/42vh no-repeat;
     background-color: #0b1a25!important;
     color: #fff;
 }
@@ -102,14 +102,13 @@ body.sombre>button {
 }
 
 button {
-    background-image: linear-gradient(to left top, #21aeec, #069fe4, #0090db, #0080d2, #1171c7);
     background-color: #0090db;
+    background-image: linear-gradient(to left top, #21aeec, #069fe4, #0090db, #0080d2, #1171c7);
     border: 0;
     color: #fff;
-    font-weight: bold;
     outline: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.7em;
+    font-size: 0.5em;
     padding: 12px 29px;
     cursor: pointer;
     border-radius: 11px;
